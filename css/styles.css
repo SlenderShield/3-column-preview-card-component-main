@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 15px;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.main {
+	margin: 20% 0;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1.2px;
+	word-spacing: 1px;
+}
+section {
+	width: 80%;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 30px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+section:first-of-type {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+section:last-of-type {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+section > h1 {
+	font-family: "Big Shoulders Display", cursive;
+	font-size: 2rem;
+	margin: 10px 0;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+.btn {
+	background-color: hsl(0, 0%, 95%);
+	border: none;
+	border-radius: 30px;
+	padding: 10px 20px;
+	margin-top: 20px;
+	outline: none;
+	font-weight: 700;
+}
+.sedans .btn {
+	color: hsl(31, 77%, 52%);
+}
+.luxury .btn {
+	color: hsl(179, 100%, 13%);
+}
+.suvs .btn {
+	color: hsl(184, 100%, 22%);
+}
+
+.btn:hover {
+	color: hsl(0, 0%, 95%);
+	border: 1px solid hsl(0, 0%, 95%);
+	padding: 9px 20px;
+}
+.sedans .btn:hover {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.suvs .btn:hover {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn:hover {
+	background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 769px) {
+	.main {
+		flex-direction: row;
+		margin: 0 30px;
+	}
+	section {
+		width: 20vw;
+		height: 60vh;
+	}
+	section:first-of-type {
+		border-top-right-radius: 0;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	section:last-of-type {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 0;
+	}
+}
